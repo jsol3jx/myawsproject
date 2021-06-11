@@ -234,10 +234,10 @@ resource "aws_security_group" "my_vpc_launch_config_sg" {
 }
 
 # creates an autoscaling attachmet to my_vpc_alb_target_group.
-resource "aws_autoscaling_attachment" "my_vpc_aws_autoscaling_attachment" {
-    alb_target_group_arn = aws_alb_target_group.my_vpc_alb_target_group.arn
-    autoscaling_group_name = aws_autoscaling_group.my_vpc_autoscaling_group.id
-}
+#resource "aws_autoscaling_attachment" "my_vpc_aws_autoscaling_attachment" {
+#    alb_target_group_arn = aws_alb_target_group.my_vpc_alb_target_group.arn
+#    autoscaling_group_name = aws_autoscaling_group.my_vpc_autoscaling_group.id
+#}
 
 # Creates the autoscaling group.
 resource "aws_autoscaling_group" "my_vpc_autoscaling_group" {
